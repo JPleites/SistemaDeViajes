@@ -1,0 +1,11 @@
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\bin\Debug\ProyectoDeTransporte.exe.config
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\bin\Debug\ProyectoDeTransporte.exe
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\bin\Debug\ProyectoDeTransporte.pdb
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.csproj.AssemblyReference.cache
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.Login.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.Properties.Resources.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.csproj.GenerateResource.cache
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.csproj.CoreCompileInputs.cache
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.exe
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.pdb
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.inicio.resources
