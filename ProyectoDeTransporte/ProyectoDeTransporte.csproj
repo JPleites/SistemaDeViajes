@@ -46,12 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="conexion.cs" />
-    <Compile Include="inicio.cs">
+    <Compile Include="admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="inicio.Designer.cs">
-      <DependentUpon>inicio.cs</DependentUpon>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conexion.cs" />
+    <Compile Include="supervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supervisor.Designer.cs">
+      <DependentUpon>supervisor.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -61,8 +67,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="inicio.resx">
-      <DependentUpon>inicio.cs</DependentUpon>
+    <EmbeddedResource Include="supervisor.resx">
+      <DependentUpon>supervisor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

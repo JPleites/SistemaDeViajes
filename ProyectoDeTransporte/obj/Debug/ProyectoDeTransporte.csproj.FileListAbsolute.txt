@@ -8,4 +8,4 @@ C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTrans
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.csproj.CoreCompileInputs.cache
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.exe
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.pdb
-C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.inicio.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.supervisor.resources

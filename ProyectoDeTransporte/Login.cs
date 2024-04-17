@@ -13,6 +13,43 @@ namespace ProyectoDeTransporte
 {
     public partial class Login : Form
     {
+        private string ObtenerRol(string username, string password)
+        {
+            using (conexion.Conectar())
+            {
+                string query = "SELECT Rol FROM Usuario WHERE Username = @Username AND Password = @Password";
+
+                using (SqlCommand command = new SqlCommand(query, conexion.Conectar()))
+                {
+                    command.Parameters.AddWithValue("@Username", username);
+                    command.Parameters.AddWithValue("@Password", password);
+
+                    object result = command.ExecuteScalar();
+                    conexion.desconectar();
+
+                    return result != null ? result.ToString() : null;
+                }
+            }
+        }
+
+        private void MostrarPantallaSegunRol(string role)
+        {
+            switch (role)
+            {
+                case "admin":
+                    admin adminForm = new admin();
+                    adminForm.Show();
+                    break;
+                case "supervisor":
+                    supervisor userForm = new supervisor();
+                    userForm.Show();
+                    break;
+                default:
+                    MessageBox.Show("Rol de usuario no válido.");
+                    break;
+            }
+        }
+
         public Login()
         {
             InitializeComponent();
@@ -34,9 +71,9 @@ namespace ProyectoDeTransporte
             if(lector.HasRows == true)
             {
                 MessageBox.Show("Bienvenido");
-                supervisor inicio = new supervisor();
                 this.Hide();
-                inicio.Show();
+                string rol = ObtenerRol(textBox1.Text, textBox2.Text);
+                MostrarPantallaSegunRol(rol);
             }
             else
             {
