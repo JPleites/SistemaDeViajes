@@ -1,7 +1,7 @@
 ﻿
-namespace ProyectoDeTransporte
+namespace ProyectoDeTransporte.Reportes
 {
-    partial class supervisor
+    partial class ReporteViajes
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,10 @@ namespace ProyectoDeTransporte
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // inicio
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "inicio";
-            this.Text = "inicio";
-            this.ResumeLayout(false);
-
+            this.Text = "ReporteViajes";
         }
 
         #endregion

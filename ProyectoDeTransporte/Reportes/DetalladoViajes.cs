@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoDeTransporte
+namespace ProyectoDeTransporte.Reportes
 {
-    public partial class supervisor : Form
+    public partial class DetalladoViajes : Form
     {
-        public supervisor()
+        public DetalladoViajes()
         {
             InitializeComponent();
         }

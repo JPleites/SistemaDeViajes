@@ -8,4 +8,7 @@ C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTrans
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.csproj.CoreCompileInputs.cache
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.exe
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.pdb
-C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.supervisor.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.admin.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.reportes.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.sucursal.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.Colaborador.resources

@@ -32,17 +32,37 @@ namespace ProyectoDeTransporte
             }
         }
 
+        private string ObtenerNombre(string username, string password)
+        {
+            using (conexion.Conectar())
+            {
+                string query = "SELECT Nombre FROM Usuario WHERE Username = @Username AND Password = @Password";
+
+                using (SqlCommand command = new SqlCommand(query, conexion.Conectar()))
+                {
+                    command.Parameters.AddWithValue("@Username", username);
+                    command.Parameters.AddWithValue("@Password", password);
+
+                    object result = command.ExecuteScalar();
+                    conexion.desconectar();
+
+                    return result != null ? result.ToString() : null;
+                }
+            }
+        }
+
         private void MostrarPantallaSegunRol(string role)
         {
             switch (role)
             {
                 case "admin":
-                    admin adminForm = new admin();
-                    adminForm.Show();
+                    admin admin = new admin();
+                    admin.NombreUsuario = ObtenerNombre(textBox1.Text, textBox2.Text);
+                    admin.Show();
                     break;
                 case "supervisor":
-                    supervisor userForm = new supervisor();
-                    userForm.Show();
+                    reportes sup = new reportes();
+                    sup.Show();
                     break;
                 default:
                     MessageBox.Show("Rol de usuario no válido.");

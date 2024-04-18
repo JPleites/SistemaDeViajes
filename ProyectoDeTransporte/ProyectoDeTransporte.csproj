@@ -53,11 +53,35 @@
       <DependentUpon>admin.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
-    <Compile Include="supervisor.cs">
+    <Compile Include="gtienda\Colaborador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="supervisor.Designer.cs">
-      <DependentUpon>supervisor.cs</DependentUpon>
+    <Compile Include="gtienda\Colaborador.Designer.cs">
+      <DependentUpon>Colaborador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gtienda\sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gtienda\sucursal.Designer.cs">
+      <DependentUpon>sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gtienda\Transportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gtienda\Transportista.Designer.cs">
+      <DependentUpon>Transportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gtienda\Viajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gtienda\Viajes.Designer.cs">
+      <DependentUpon>Viajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes.Designer.cs">
+      <DependentUpon>reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -67,8 +91,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="supervisor.resx">
-      <DependentUpon>supervisor.cs</DependentUpon>
+    <Compile Include="Reportes\DetalladoViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\DetalladoViajes.Designer.cs">
+      <DependentUpon>DetalladoViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteViajes.Designer.cs">
+      <DependentUpon>ReporteViajes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gtienda\Colaborador.resx">
+      <DependentUpon>Colaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gtienda\sucursal.resx">
+      <DependentUpon>sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes.resx">
+      <DependentUpon>reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -99,5 +144,6 @@
   <ItemGroup>
     <None Include="Resources\farsiman.jpeg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
