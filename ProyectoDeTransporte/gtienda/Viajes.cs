@@ -16,5 +16,12 @@ namespace ProyectoDeTransporte.gtienda
         {
             InitializeComponent();
         }
+
+        public string registrador { get; set; }
+
+        private void Viajes_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

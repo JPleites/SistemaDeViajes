@@ -30,109 +30,144 @@ namespace ProyectoDeTransporte
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.paneladmin = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.colaboradoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sucursalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transportistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viajesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paneladmin = new System.Windows.Forms.Panel();
-            this.menuStrip2.SuspendLayout();
+            this.destinosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-3, 0);
+            this.label1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 18);
+            this.label1.Size = new System.Drawing.Size(71, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // menuStrip2
+            // paneladmin
             // 
-            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.paneladmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneladmin.Location = new System.Drawing.Point(0, 0);
+            this.paneladmin.Name = "paneladmin";
+            this.paneladmin.Size = new System.Drawing.Size(746, 501);
+            this.paneladmin.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(746, 36);
+            this.panel1.TabIndex = 5;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.colaboradoresToolStripMenuItem,
+            this.destinosToolStripMenuItem,
             this.sucursalesToolStripMenuItem,
             this.transportistasToolStripMenuItem,
             this.viajesToolStripMenuItem,
+            this.reportesToolStripMenuItem,
             this.logOutToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(367, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(497, 24);
-            this.menuStrip2.TabIndex = 3;
-            this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip1.Location = new System.Drawing.Point(242, 5);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(626, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // colaboradoresToolStripMenuItem
             // 
             this.colaboradoresToolStripMenuItem.Name = "colaboradoresToolStripMenuItem";
             this.colaboradoresToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.colaboradoresToolStripMenuItem.Text = "Colaboradores";
-            this.colaboradoresToolStripMenuItem.Click += new System.EventHandler(this.colaboradoresToolStripMenuItem_Click);
+            this.colaboradoresToolStripMenuItem.Click += new System.EventHandler(this.colaboradoresToolStripMenuItem_Click_1);
             // 
             // sucursalesToolStripMenuItem
             // 
             this.sucursalesToolStripMenuItem.Name = "sucursalesToolStripMenuItem";
             this.sucursalesToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.sucursalesToolStripMenuItem.Text = "Sucursales";
-            this.sucursalesToolStripMenuItem.Click += new System.EventHandler(this.sucursalesToolStripMenuItem_Click);
+            this.sucursalesToolStripMenuItem.Click += new System.EventHandler(this.sucursalesToolStripMenuItem_Click_1);
             // 
             // transportistasToolStripMenuItem
             // 
             this.transportistasToolStripMenuItem.Name = "transportistasToolStripMenuItem";
             this.transportistasToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.transportistasToolStripMenuItem.Text = "Transportistas";
-            this.transportistasToolStripMenuItem.Click += new System.EventHandler(this.transportistasToolStripMenuItem_Click);
+            this.transportistasToolStripMenuItem.Click += new System.EventHandler(this.transportistasToolStripMenuItem_Click_1);
             // 
             // viajesToolStripMenuItem
             // 
             this.viajesToolStripMenuItem.Name = "viajesToolStripMenuItem";
             this.viajesToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.viajesToolStripMenuItem.Text = "Viajes";
-            this.viajesToolStripMenuItem.Click += new System.EventHandler(this.viajesToolStripMenuItem_Click);
+            this.viajesToolStripMenuItem.Click += new System.EventHandler(this.viajesToolStripMenuItem_Click_1);
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click_1);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.logOutToolStripMenuItem.Text = "LogOut";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
             // 
-            // paneladmin
+            // destinosToolStripMenuItem
             // 
-            this.paneladmin.Location = new System.Drawing.Point(0, 27);
-            this.paneladmin.Name = "paneladmin";
-            this.paneladmin.Size = new System.Drawing.Size(744, 425);
-            this.paneladmin.TabIndex = 4;
+            this.destinosToolStripMenuItem.Name = "destinosToolStripMenuItem";
+            this.destinosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.destinosToolStripMenuItem.Text = "Destinos";
+            this.destinosToolStripMenuItem.Click += new System.EventHandler(this.destinosToolStripMenuItem_Click);
             // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 450);
+            this.ClientSize = new System.Drawing.Size(746, 501);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.paneladmin);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip2);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "admin";
             this.Text = "Gerente de Tienda";
             this.Load += new System.EventHandler(this.admin_Load);
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.Panel paneladmin;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem colaboradoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sucursalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transportistasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viajesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
-        private System.Windows.Forms.Panel paneladmin;
+        private System.Windows.Forms.ToolStripMenuItem destinosToolStripMenuItem;
     }
 }

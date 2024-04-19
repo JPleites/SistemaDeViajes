@@ -29,10 +29,18 @@ namespace ProyectoDeTransporte.gtienda
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Viajes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(724, 450);
+            this.Name = "Viajes";
             this.Text = "Viajes";
+            this.Load += new System.EventHandler(this.Viajes_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

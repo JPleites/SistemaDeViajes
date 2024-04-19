@@ -29,28 +29,7 @@ namespace ProyectoDeTransporte
 
         }
 
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
-        }
-
-        private void sucursalesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            paneladmin.Controls.Clear();
-            gtienda.sucursal sucursal = new gtienda.sucursal();
-            sucursal.TopLevel = false;
-            sucursal.Parent = paneladmin;
-            sucursal.Dock = DockStyle.Fill;
-            paneladmin.Controls.Add(sucursal);
-            sucursal.MinimizeBox = false;
-            sucursal.MaximizeBox = false;
-            sucursal.ControlBox = false;
-            sucursal.Show();
-        }
-
-        private void colaboradoresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void colaboradoresToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             paneladmin.Controls.Clear();
             gtienda.Colaborador colab = new gtienda.Colaborador();
@@ -64,7 +43,21 @@ namespace ProyectoDeTransporte
             colab.Show();
         }
 
-        private void transportistasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sucursalesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            paneladmin.Controls.Clear();
+            gtienda.sucursal sucursal = new gtienda.sucursal();
+            sucursal.TopLevel = false;
+            sucursal.Parent = paneladmin;
+            sucursal.Dock = DockStyle.Fill;
+            paneladmin.Controls.Add(sucursal);
+            sucursal.MinimizeBox = false;
+            sucursal.MaximizeBox = false;
+            sucursal.ControlBox = false;
+            sucursal.Show();
+        }
+
+        private void transportistasToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             paneladmin.Controls.Clear();
             gtienda.Transportista trans = new gtienda.Transportista();
@@ -78,10 +71,11 @@ namespace ProyectoDeTransporte
             trans.Show();
         }
 
-        private void viajesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void viajesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             paneladmin.Controls.Clear();
-            gtienda.Viajes viaje= new gtienda.Viajes();
+            gtienda.Viajes viaje = new gtienda.Viajes();
+            viaje.registrador = NombreUsuario;
             viaje.TopLevel = false;
             viaje.Parent = paneladmin;
             viaje.Dock = DockStyle.Fill;
@@ -90,6 +84,41 @@ namespace ProyectoDeTransporte
             viaje.MaximizeBox = false;
             viaje.ControlBox = false;
             viaje.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            paneladmin.Controls.Clear();
+            Reportes.ReporteViajes rviajes = new Reportes.ReporteViajes();
+            rviajes.TopLevel = false;
+            rviajes.Parent = paneladmin;
+            rviajes.Dock = DockStyle.Fill;
+            paneladmin.Controls.Add(rviajes);
+            rviajes.MinimizeBox = false;
+            rviajes.MaximizeBox = false;
+            rviajes.ControlBox = false;
+            rviajes.Show();
+        }
+
+        private void logOutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void destinosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            paneladmin.Controls.Clear();
+            gtienda.destinos destino = new gtienda.destinos();
+            destino.TopLevel = false;
+            destino.Parent = paneladmin;
+            destino.Dock = DockStyle.Fill;
+            paneladmin.Controls.Add(destino);
+            destino.MinimizeBox = false;
+            destino.MaximizeBox = false;
+            destino.ControlBox = false;
+            destino.Show();
         }
     }
 }

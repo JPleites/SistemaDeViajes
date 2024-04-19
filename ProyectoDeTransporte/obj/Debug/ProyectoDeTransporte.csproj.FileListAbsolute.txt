@@ -9,6 +9,10 @@ C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTrans
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.exe
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.pdb
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.admin.resources
-C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.reportes.resources
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.sucursal.resources
 C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.Colaborador.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.Transportista.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.Viajes.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.Reportes.DetalladoViajes.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.Reportes.ReporteViajes.resources
+C:\Users\HP User\Documents\PracticaFarsiman\ProyectoDeTransporte\ProyectoDeTransporte\obj\Debug\ProyectoDeTransporte.gtienda.destinos.resources

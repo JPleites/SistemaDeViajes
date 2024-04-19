@@ -61,7 +61,7 @@ namespace ProyectoDeTransporte
                     admin.Show();
                     break;
                 case "supervisor":
-                    reportes sup = new reportes();
+                    Reportes.ReporteViajes sup = new Reportes.ReporteViajes();
                     sup.Show();
                     break;
                 default:
@@ -90,7 +90,6 @@ namespace ProyectoDeTransporte
 
             if(lector.HasRows == true)
             {
-                MessageBox.Show("Bienvenido");
                 this.Hide();
                 string rol = ObtenerRol(textBox1.Text, textBox2.Text);
                 MostrarPantallaSegunRol(rol);
@@ -100,6 +99,11 @@ namespace ProyectoDeTransporte
                 MessageBox.Show("Datos incorrectos");
             }
             conexion.desconectar();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

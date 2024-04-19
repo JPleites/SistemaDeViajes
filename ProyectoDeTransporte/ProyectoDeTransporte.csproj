@@ -59,6 +59,12 @@
     <Compile Include="gtienda\Colaborador.Designer.cs">
       <DependentUpon>Colaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="gtienda\destinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gtienda\destinos.Designer.cs">
+      <DependentUpon>destinos.cs</DependentUpon>
+    </Compile>
     <Compile Include="gtienda\sucursal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +82,6 @@
     </Compile>
     <Compile Include="gtienda\Viajes.Designer.cs">
       <DependentUpon>Viajes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes.Designer.cs">
-      <DependentUpon>reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -109,11 +109,17 @@
     <EmbeddedResource Include="gtienda\Colaborador.resx">
       <DependentUpon>Colaborador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gtienda\destinos.resx">
+      <DependentUpon>destinos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gtienda\sucursal.resx">
       <DependentUpon>sucursal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="reportes.resx">
-      <DependentUpon>reportes.cs</DependentUpon>
+    <EmbeddedResource Include="gtienda\Transportista.resx">
+      <DependentUpon>Transportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gtienda\Viajes.resx">
+      <DependentUpon>Viajes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -128,6 +134,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\DetalladoViajes.resx">
+      <DependentUpon>DetalladoViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteViajes.resx">
+      <DependentUpon>ReporteViajes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
