@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace ProyectoDeTransporte.gtienda
 {
@@ -105,9 +106,10 @@ namespace ProyectoDeTransporte.gtienda
 
         private long distancia(ComboBox cb)
         {
-            Viajes colaboradorSeleccionado = (Viajes)cbcolab1.SelectedItem;
+            Viajes colaboradorSeleccionado = (Viajes)cb.SelectedItem;
             return colaboradorSeleccionado.Distancia;
         }
+
 
         private void Viajes_Load(object sender, EventArgs e)
         {
@@ -136,32 +138,32 @@ namespace ProyectoDeTransporte.gtienda
 
             if (resultado == DialogResult.Yes && long.Parse(txtdist.Text) > 0 && long.Parse(txtdist.Text) <= 100 && long.Parse(txttarifa.Text) > 0)
             {
-                sql = "insert into Viajes(Registrado, Colaborador_1, Colaborador_2, Colaborador_3, Colaborador_4, Colaborador_5, Colaborador_6, Colaborador_7, Colaborador_8, Colaborador_9, Colaborador_10, Transportista, Tarifa, Distancia_Total, Costo_Total, Fecha) values (@reg, @c1, @c2, @c3, @c4, @c5, @c6, @c7, @c8, @c9, @c10, @tr, @ta, @dt, @ct, @fec)";
-                SqlCommand cmd = new SqlCommand(sql, conexion.Conectar());
-                cmd.Parameters.AddWithValue("@reg", txtregistrado.Text);
-                cmd.Parameters.AddWithValue("@c1", cbcolab1.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c2", cbcolab2.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c3", cbcolab3.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c4", cbcolab4.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c5", cbcolab5.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c6", cbcolab6.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c7", cbcolab7.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c8", cbcolab8.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c9", cbcolab9.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@c10", cbcolab10.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@tr", cbtrans.SelectedItem.ToString());
-                cmd.Parameters.AddWithValue("@ta", txttarifa.Text);
-                cmd.Parameters.AddWithValue("@dt", txtdist.Text);
-                cmd.Parameters.AddWithValue("@ct", txtCost.Text);
-                cmd.Parameters.AddWithValue("@fec", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+                string reg = txtregistrado.Text;
+                string c1 = cbcolab1.SelectedItem.ToString();
+                string c2 = cbcolab1.SelectedItem.ToString();
+                string c3 = cbcolab1.SelectedItem.ToString();
+                string c4 = cbcolab1.SelectedItem.ToString();
+                string c5 = cbcolab1.SelectedItem.ToString();
+                string c6 = cbcolab1.SelectedItem.ToString();
+                string c7 = cbcolab1.SelectedItem.ToString();
+                string c8 = cbcolab1.SelectedItem.ToString();
+                string c9 = cbcolab1.SelectedItem.ToString();
+                string c10 = cbcolab1.SelectedItem.ToString();
+                string tr = cbtrans.SelectedItem.ToString();
+                string ta = txttarifa.Text;
+                string dt = txtdist.Text;
+                string ct = txtCost.Text;
+                string fec = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 
+                sql = "insert into Viajes(Registrado, Colaborador_1, Colaborador_2, Colaborador_3, Colaborador_4, Colaborador_5, Colaborador_6, Colaborador_7, Colaborador_8, Colaborador_9, Colaborador_10, Transportista, Tarifa, Distancia_Total, Costo_Total, Fecha) values ('"+reg+"', '"+c1+ "', '" + c2 + "', '" + c3 + "', '" + c4 + "', '" + c5 + "', '" + c6 + "', '" + c7 + "', '" + c8 + "', '" + c9 + "', '" + c10 + "', '"+tr+"', '"+ta+"', '"+dt+"', '"+ct+"', '"+fec+"')";
+                SqlCommand cmd = new SqlCommand(sql, conexion.Conectar());
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Agregado Correctamente");
             }
             else if(resultado == DialogResult.No)
             {
-
+                this.Close();
             }
             else
             {
@@ -186,7 +188,7 @@ namespace ProyectoDeTransporte.gtienda
 
         private void calculobtn_Click(object sender, EventArgs e)
         {
-            if (txttarifa.Text!=null)
+            if (txttarifa.Text != null && cbtrans != null)
             {
                 if(long.Parse(txtdist.Text)>0 && long.Parse(txtdist.Text) <= 100)
                 {
@@ -214,6 +216,20 @@ namespace ProyectoDeTransporte.gtienda
         {
             suma(distancia(cbcolab2));
 
+            List<ComboBox> listaDeComboBox = new List<ComboBox>();
+
+            ComboBox comboBoxActual = (ComboBox)sender;
+            object valorSeleccionado = comboBoxActual.SelectedItem;
+
+            // Verificar si el valor seleccionado está repetido en los otros ComboBox
+            foreach (Control control in Controls)
+            {
+                if (control is ComboBox comboBox && comboBox != comboBoxActual && comboBox.SelectedItem != null && comboBox.SelectedItem.Equals(valorSeleccionado))
+                {
+                    MessageBox.Show("El valor seleccionado ya está presente en otro ComboBox.");
+                    // Aquí puedes tomar medidas adicionales si lo deseas, como deseleccionar el valor repetido.
+                }
+            }
         }
 
         private void cbcolab3_SelectedIndexChanged(object sender, EventArgs e)
@@ -254,6 +270,30 @@ namespace ProyectoDeTransporte.gtienda
         private void cbcolab10_SelectedIndexChanged(object sender, EventArgs e)
         {
             suma(distancia(cbcolab10));
+        }
+
+        private void cleanbtn_Click(object sender, EventArgs e)
+        {
+            cbcolab1.SelectedItem = null;
+            cbcolab2.SelectedItem = null;
+            cbcolab3.SelectedItem = null;
+            cbcolab4.SelectedItem = null;
+            cbcolab5.SelectedItem = null;
+            cbcolab6.SelectedItem = null;
+            cbcolab7.SelectedItem = null;
+            cbcolab8.SelectedItem = null;
+            cbcolab9.SelectedItem = null;
+            cbcolab10.SelectedItem = null;
+            cbtrans.SelectedItem = null;
+            txttarifa.Clear();
+            txtdist.Clear();
+            txtCost.Clear();
+            dtotal = 0;
+        }
+
+        private void txtdist_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

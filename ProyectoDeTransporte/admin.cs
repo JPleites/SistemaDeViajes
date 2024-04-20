@@ -102,7 +102,7 @@ namespace ProyectoDeTransporte
 
         private void logOutToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Login login = new Login();
             login.Show();
         }

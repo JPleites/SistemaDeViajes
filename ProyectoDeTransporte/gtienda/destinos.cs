@@ -192,7 +192,8 @@ namespace ProyectoDeTransporte.gtienda
                 cargardatos();
                 limpiar();
             }
-            else{
+            else if(distancia.Value <= 0 && distancia.Value > 50)
+            {
                 MessageBox.Show("La distancia no puede ser 0 o mayor a 50");
             }
             

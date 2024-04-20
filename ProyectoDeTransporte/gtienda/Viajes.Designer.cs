@@ -62,7 +62,6 @@ namespace ProyectoDeTransporte.gtienda
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.confirmbtn = new System.Windows.Forms.Button();
-            this.cleanbtn = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.calculobtn = new System.Windows.Forms.Button();
@@ -105,7 +104,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab1.Name = "cbcolab1";
             this.cbcolab1.Size = new System.Drawing.Size(220, 21);
             this.cbcolab1.TabIndex = 1;
-            this.cbcolab1.Text = "Ninguno";
             this.cbcolab1.SelectedIndexChanged += new System.EventHandler(this.cbcolab1_SelectedIndexChanged);
             this.cbcolab1.SelectedValueChanged += new System.EventHandler(this.cbcolab1_SelectedValueChanged);
             // 
@@ -136,7 +134,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab2.Name = "cbcolab2";
             this.cbcolab2.Size = new System.Drawing.Size(220, 21);
             this.cbcolab2.TabIndex = 2;
-            this.cbcolab2.Text = "Ninguno";
             this.cbcolab2.SelectedIndexChanged += new System.EventHandler(this.cbcolab2_SelectedIndexChanged);
             // 
             // cbcolab4
@@ -146,7 +143,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab4.Name = "cbcolab4";
             this.cbcolab4.Size = new System.Drawing.Size(222, 21);
             this.cbcolab4.TabIndex = 4;
-            this.cbcolab4.Text = "Ninguno";
             this.cbcolab4.SelectedIndexChanged += new System.EventHandler(this.cbcolab4_SelectedIndexChanged);
             // 
             // label5
@@ -166,7 +162,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab5.Name = "cbcolab5";
             this.cbcolab5.Size = new System.Drawing.Size(220, 21);
             this.cbcolab5.TabIndex = 5;
-            this.cbcolab5.Text = "Ninguno";
             this.cbcolab5.SelectedIndexChanged += new System.EventHandler(this.cbcolab5_SelectedIndexChanged);
             // 
             // label6
@@ -186,7 +181,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab3.Name = "cbcolab3";
             this.cbcolab3.Size = new System.Drawing.Size(220, 21);
             this.cbcolab3.TabIndex = 3;
-            this.cbcolab3.Text = "Ninguno";
             this.cbcolab3.SelectedIndexChanged += new System.EventHandler(this.cbcolab3_SelectedIndexChanged);
             // 
             // label7
@@ -206,7 +200,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab6.Name = "cbcolab6";
             this.cbcolab6.Size = new System.Drawing.Size(220, 21);
             this.cbcolab6.TabIndex = 6;
-            this.cbcolab6.Text = "Ninguno";
             this.cbcolab6.SelectedIndexChanged += new System.EventHandler(this.cbcolab6_SelectedIndexChanged);
             // 
             // cbcolab7
@@ -216,7 +209,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab7.Name = "cbcolab7";
             this.cbcolab7.Size = new System.Drawing.Size(222, 21);
             this.cbcolab7.TabIndex = 7;
-            this.cbcolab7.Text = "Ninguno";
             this.cbcolab7.SelectedIndexChanged += new System.EventHandler(this.cbcolab7_SelectedIndexChanged);
             // 
             // label8
@@ -236,7 +228,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab8.Name = "cbcolab8";
             this.cbcolab8.Size = new System.Drawing.Size(222, 21);
             this.cbcolab8.TabIndex = 8;
-            this.cbcolab8.Text = "Ninguno";
             this.cbcolab8.SelectedIndexChanged += new System.EventHandler(this.cbcolab8_SelectedIndexChanged);
             // 
             // label9
@@ -256,7 +247,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab9.Name = "cbcolab9";
             this.cbcolab9.Size = new System.Drawing.Size(222, 21);
             this.cbcolab9.TabIndex = 9;
-            this.cbcolab9.Text = "Ninguno";
             this.cbcolab9.SelectedIndexChanged += new System.EventHandler(this.cbcolab9_SelectedIndexChanged);
             // 
             // label10
@@ -276,7 +266,6 @@ namespace ProyectoDeTransporte.gtienda
             this.cbcolab10.Name = "cbcolab10";
             this.cbcolab10.Size = new System.Drawing.Size(222, 21);
             this.cbcolab10.TabIndex = 10;
-            this.cbcolab10.Text = "Ninguno";
             this.cbcolab10.SelectedIndexChanged += new System.EventHandler(this.cbcolab10_SelectedIndexChanged);
             // 
             // label11
@@ -336,6 +325,7 @@ namespace ProyectoDeTransporte.gtienda
             this.txtdist.ReadOnly = true;
             this.txtdist.Size = new System.Drawing.Size(150, 20);
             this.txtdist.TabIndex = 27;
+            this.txtdist.TextChanged += new System.EventHandler(this.txtdist_TextChanged);
             // 
             // label14
             // 
@@ -391,23 +381,13 @@ namespace ProyectoDeTransporte.gtienda
             // confirmbtn
             // 
             this.confirmbtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmbtn.Location = new System.Drawing.Point(468, 398);
+            this.confirmbtn.Location = new System.Drawing.Point(601, 395);
             this.confirmbtn.Name = "confirmbtn";
             this.confirmbtn.Size = new System.Drawing.Size(110, 40);
             this.confirmbtn.TabIndex = 12;
             this.confirmbtn.Text = "Confirmar";
             this.confirmbtn.UseVisualStyleBackColor = true;
             this.confirmbtn.Click += new System.EventHandler(this.confirmbtn_Click);
-            // 
-            // cleanbtn
-            // 
-            this.cleanbtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cleanbtn.Location = new System.Drawing.Point(601, 398);
-            this.cleanbtn.Name = "cleanbtn";
-            this.cleanbtn.Size = new System.Drawing.Size(110, 40);
-            this.cleanbtn.TabIndex = 13;
-            this.cleanbtn.Text = "Limpiar";
-            this.cleanbtn.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
@@ -429,7 +409,7 @@ namespace ProyectoDeTransporte.gtienda
             // calculobtn
             // 
             this.calculobtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculobtn.Location = new System.Drawing.Point(335, 398);
+            this.calculobtn.Location = new System.Drawing.Point(479, 398);
             this.calculobtn.Name = "calculobtn";
             this.calculobtn.Size = new System.Drawing.Size(110, 40);
             this.calculobtn.TabIndex = 35;
@@ -445,7 +425,6 @@ namespace ProyectoDeTransporte.gtienda
             this.Controls.Add(this.calculobtn);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.cleanbtn);
             this.Controls.Add(this.confirmbtn);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.txtCost);
@@ -522,7 +501,6 @@ namespace ProyectoDeTransporte.gtienda
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button confirmbtn;
-        private System.Windows.Forms.Button cleanbtn;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button calculobtn;

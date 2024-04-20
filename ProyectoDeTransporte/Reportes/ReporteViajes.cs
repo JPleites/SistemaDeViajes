@@ -53,6 +53,22 @@ namespace ProyectoDeTransporte.Reportes
             conexion.desconectar();
         }
 
+        private void total()
+        {
+            long total = 0;
+            foreach (DataGridViewRow fila in reporte.Rows)
+            {
+                
+                if (!fila.IsNewRow && fila.Cells[3].Value != null)
+                {
+                    long valorCelda = long.Parse(fila.Cells[2].Value.ToString());
+
+                    total += valorCelda;
+                }
+            }
+            txttotal.Text = total.ToString();
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -69,6 +85,7 @@ namespace ProyectoDeTransporte.Reportes
         {
             llenarcb();
             cargardatos();
+            total();
         }
 
         private void reporte_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -81,13 +98,36 @@ namespace ProyectoDeTransporte.Reportes
         private void cleanbtn_Click(object sender, EventArgs e)
         {
             cargardatos();
+            cbfiltrans.SelectedItem = null;
+            fechafin.ResetText();
+            fechaini.ResetText();
+            total();
         }
 
         private void searchbtn_Click(object sender, EventArgs e)
         {
-            if (cbfiltrans.SelectedItem.ToString() != null)
+            if (cbfiltrans.SelectedItem != null)
             {
-                sql = "Select * from Viajes where Transportista = '" + cbfiltrans.SelectedItem.ToString()+"'";
+                sql = "Select ID_Viaje as 'ID Viaje', Transportista, Costo_Total as 'Costo del Viaje', Fecha from Viajes where Transportista = '" + cbfiltrans.SelectedItem.ToString()+"' and Fecha>='"+fechaini.Value.ToString("yyyy-MM-dd") +"' and Fecha<='"+fechafin.Value.ToString("yyyy-MM-dd") +"'";
+
+                try
+                {
+                    SqlDataAdapter sda = new SqlDataAdapter(sql, conexion.Conectar());
+                    DataTable dt = new DataTable();
+
+                    sda.Fill(dt);
+                    reporte.DataSource = dt;
+                    conexion.desconectar();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    conexion.desconectar();
+                }
+            }
+            else if (cbfiltrans.SelectedItem == null)
+            {
+                sql = "Select ID_Viaje as 'ID Viaje', Transportista, Costo_Total as 'Costo del Viaje', Fecha from Viajes where Fecha>='" + fechaini.Value.ToString("yyyy-MM-dd") + "' and Fecha<='" + fechafin.Value.ToString("yyyy-MM-dd") + "'";
 
                 try
                 {
@@ -108,7 +148,7 @@ namespace ProyectoDeTransporte.Reportes
             {
                 MessageBox.Show("Campos de busqueda vacíos");
             }
-            
+            total();
         }
     }
 }

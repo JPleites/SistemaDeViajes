@@ -38,7 +38,8 @@ namespace ProyectoDeTransporte.Reportes
             this.label3 = new System.Windows.Forms.Label();
             this.fechaini = new System.Windows.Forms.DateTimePicker();
             this.fechafin = new System.Windows.Forms.DateTimePicker();
-            this.lgtbtn = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txttotal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.reporte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +120,7 @@ namespace ProyectoDeTransporte.Reportes
             this.fechaini.Name = "fechaini";
             this.fechaini.Size = new System.Drawing.Size(200, 20);
             this.fechaini.TabIndex = 10;
+            this.fechaini.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
             // fechafin
             // 
@@ -127,23 +129,30 @@ namespace ProyectoDeTransporte.Reportes
             this.fechafin.Size = new System.Drawing.Size(200, 20);
             this.fechafin.TabIndex = 11;
             // 
-            // lgtbtn
+            // label4
             // 
-            this.lgtbtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lgtbtn.Location = new System.Drawing.Point(634, 9);
-            this.lgtbtn.Name = "lgtbtn";
-            this.lgtbtn.Size = new System.Drawing.Size(78, 31);
-            this.lgtbtn.TabIndex = 12;
-            this.lgtbtn.Text = "LogOut";
-            this.lgtbtn.UseVisualStyleBackColor = true;
-            this.lgtbtn.Click += new System.EventHandler(this.lgtbtn_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(494, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 17);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Total de Costo de la búsqueda";
+            // 
+            // txttotal
+            // 
+            this.txttotal.Location = new System.Drawing.Point(497, 39);
+            this.txttotal.Name = "txttotal";
+            this.txttotal.Size = new System.Drawing.Size(215, 20);
+            this.txttotal.TabIndex = 13;
             // 
             // ReporteViajes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 450);
-            this.Controls.Add(this.lgtbtn);
+            this.Controls.Add(this.txttotal);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.fechafin);
             this.Controls.Add(this.fechaini);
             this.Controls.Add(this.label3);
@@ -173,6 +182,7 @@ namespace ProyectoDeTransporte.Reportes
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker fechaini;
         private System.Windows.Forms.DateTimePicker fechafin;
-        private System.Windows.Forms.Button lgtbtn;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txttotal;
     }
 }
