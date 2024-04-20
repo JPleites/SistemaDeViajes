@@ -90,9 +90,9 @@ namespace ProyectoDeTransporte
 
             if(lector.HasRows == true)
             {
-                this.Hide();
                 string rol = ObtenerRol(textBox1.Text, textBox2.Text);
                 MostrarPantallaSegunRol(rol);
+                this.Hide();
             }
             else
             {

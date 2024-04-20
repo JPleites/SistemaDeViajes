@@ -137,6 +137,7 @@ namespace ProyectoDeTransporte.gtienda
             this.distancia.Name = "distancia";
             this.distancia.Size = new System.Drawing.Size(258, 20);
             this.distancia.TabIndex = 20;
+            this.distancia.ValueChanged += new System.EventHandler(this.distancia_ValueChanged);
             // 
             // destinos
             // 

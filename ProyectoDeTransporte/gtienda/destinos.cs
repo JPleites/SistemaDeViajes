@@ -22,7 +22,7 @@ namespace ProyectoDeTransporte.gtienda
 
         public void cargardatos()
         {
-            sql = "Select * from AsigSucursales";
+            sql = "SELECT a.ID_Colaborador as ID_Colaborador, c.nombre as Colaborador, a.ID_Sucursal as ID_Sucursal, s.Sucursal as Sucursal, Distancia FROM colaboradores c INNER JOIN AsigSucursales a ON c.id = a.ID_Colaborador INNER JOIN sucursales s ON a.ID_Sucursal = s.ID";
             try
             {
                 SqlDataAdapter sda = new SqlDataAdapter(sql, conexion.Conectar());
@@ -233,8 +233,13 @@ namespace ProyectoDeTransporte.gtienda
         private void destdgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             comboBox1.SelectedItem = ObNomColab(long.Parse(destdgv.CurrentRow.Cells[0].Value.ToString()));
-            comboBox2.SelectedItem = ObNombreSuc(long.Parse(destdgv.CurrentRow.Cells[1].Value.ToString()));
-            distancia.Value = decimal.Parse(destdgv.CurrentRow.Cells[2].Value.ToString());
+            comboBox2.SelectedItem = ObNombreSuc(long.Parse(destdgv.CurrentRow.Cells[2].Value.ToString()));
+            distancia.Value = decimal.Parse(destdgv.CurrentRow.Cells[4].Value.ToString());
+        }
+
+        private void distancia_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
