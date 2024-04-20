@@ -58,63 +58,76 @@ namespace ProyectoDeTransporte.gtienda
             // 
             // editbtn
             // 
+            this.editbtn.BackColor = System.Drawing.Color.Indigo;
+            this.editbtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.editbtn.Location = new System.Drawing.Point(610, 375);
             this.editbtn.Name = "editbtn";
             this.editbtn.Size = new System.Drawing.Size(94, 28);
             this.editbtn.TabIndex = 1;
             this.editbtn.Text = "Editar";
-            this.editbtn.UseVisualStyleBackColor = true;
+            this.editbtn.UseVisualStyleBackColor = false;
             this.editbtn.Click += new System.EventHandler(this.editbtn_Click);
             // 
             // addbtn
             // 
+            this.addbtn.BackColor = System.Drawing.Color.Indigo;
+            this.addbtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.addbtn.Location = new System.Drawing.Point(610, 338);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(94, 28);
             this.addbtn.TabIndex = 2;
             this.addbtn.Text = "Nuevo";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // deletebtn
             // 
+            this.deletebtn.BackColor = System.Drawing.Color.Indigo;
+            this.deletebtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.deletebtn.Location = new System.Drawing.Point(610, 414);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(94, 28);
             this.deletebtn.TabIndex = 3;
             this.deletebtn.Text = "Eliminar";
-            this.deletebtn.UseVisualStyleBackColor = true;
+            this.deletebtn.UseVisualStyleBackColor = false;
             this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 353);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(28, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "ID";
             // 
             // txtid
             // 
+            this.txtid.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtid.Location = new System.Drawing.Point(23, 383);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(259, 20);
+            this.txtid.Size = new System.Drawing.Size(259, 21);
             this.txtid.TabIndex = 5;
             // 
             // txtnombre
             // 
+            this.txtnombre.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnombre.Location = new System.Drawing.Point(315, 383);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(259, 20);
+            this.txtnombre.Size = new System.Drawing.Size(259, 21);
             this.txtnombre.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(312, 353);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(73, 18);
             this.label2.TabIndex = 6;
             this.label2.Text = "Nombre";
             // 
@@ -123,6 +136,7 @@ namespace ProyectoDeTransporte.gtienda
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(724, 450);
             this.ControlBox = false;
             this.Controls.Add(this.txtnombre);

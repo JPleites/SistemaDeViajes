@@ -74,24 +74,30 @@ namespace ProyectoDeTransporte.Reportes
             // 
             // searchbtn
             // 
+            this.searchbtn.BackColor = System.Drawing.Color.Navy;
+            this.searchbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.searchbtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.searchbtn.Location = new System.Drawing.Point(497, 131);
             this.searchbtn.Name = "searchbtn";
             this.searchbtn.Size = new System.Drawing.Size(100, 40);
             this.searchbtn.TabIndex = 5;
             this.searchbtn.Text = "Buscar";
-            this.searchbtn.UseVisualStyleBackColor = true;
+            this.searchbtn.UseVisualStyleBackColor = false;
             this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click);
             // 
             // cleanbtn
             // 
+            this.cleanbtn.BackColor = System.Drawing.Color.Navy;
+            this.cleanbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cleanbtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cleanbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cleanbtn.Location = new System.Drawing.Point(612, 131);
             this.cleanbtn.Name = "cleanbtn";
             this.cleanbtn.Size = new System.Drawing.Size(100, 40);
             this.cleanbtn.TabIndex = 7;
             this.cleanbtn.Text = "Limpiar";
-            this.cleanbtn.UseVisualStyleBackColor = true;
+            this.cleanbtn.UseVisualStyleBackColor = false;
             this.cleanbtn.Click += new System.EventHandler(this.cleanbtn_Click);
             // 
             // label1
@@ -150,6 +156,7 @@ namespace ProyectoDeTransporte.Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(724, 450);
             this.Controls.Add(this.txttotal);
             this.Controls.Add(this.label4);
@@ -162,6 +169,7 @@ namespace ProyectoDeTransporte.Reportes
             this.Controls.Add(this.cbfiltrans);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.reporte);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "ReporteViajes";
             this.Text = "ReporteViajes";
             this.Load += new System.EventHandler(this.ReporteViajes_Load);

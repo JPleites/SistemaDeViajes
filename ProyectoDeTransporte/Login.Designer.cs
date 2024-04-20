@@ -54,7 +54,7 @@ namespace ProyectoDeTransporte
             // panel1
             // 
             this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.BackColor = System.Drawing.Color.Bisque;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
@@ -67,7 +67,7 @@ namespace ProyectoDeTransporte
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(33, 95);
+            this.textBox2.Location = new System.Drawing.Point(31, 95);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = 'x';
             this.textBox2.Size = new System.Drawing.Size(176, 20);
@@ -84,7 +84,7 @@ namespace ProyectoDeTransporte
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 73);
+            this.label3.Location = new System.Drawing.Point(71, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 18);
             this.label3.TabIndex = 1;
@@ -94,7 +94,7 @@ namespace ProyectoDeTransporte
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(83, 12);
+            this.label2.Location = new System.Drawing.Point(85, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 18);
             this.label2.TabIndex = 0;
@@ -102,12 +102,15 @@ namespace ProyectoDeTransporte
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(186, 251);
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(186, 236);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 24);
+            this.button1.Size = new System.Drawing.Size(89, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2

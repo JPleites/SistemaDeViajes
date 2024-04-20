@@ -380,13 +380,15 @@ namespace ProyectoDeTransporte.gtienda
             // 
             // confirmbtn
             // 
+            this.confirmbtn.BackColor = System.Drawing.Color.Green;
             this.confirmbtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmbtn.Location = new System.Drawing.Point(601, 395);
+            this.confirmbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.confirmbtn.Location = new System.Drawing.Point(602, 398);
             this.confirmbtn.Name = "confirmbtn";
             this.confirmbtn.Size = new System.Drawing.Size(110, 40);
             this.confirmbtn.TabIndex = 12;
             this.confirmbtn.Text = "Confirmar";
-            this.confirmbtn.UseVisualStyleBackColor = true;
+            this.confirmbtn.UseVisualStyleBackColor = false;
             this.confirmbtn.Click += new System.EventHandler(this.confirmbtn_Click);
             // 
             // label18
@@ -408,19 +410,22 @@ namespace ProyectoDeTransporte.gtienda
             // 
             // calculobtn
             // 
+            this.calculobtn.BackColor = System.Drawing.Color.Green;
             this.calculobtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculobtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.calculobtn.Location = new System.Drawing.Point(479, 398);
             this.calculobtn.Name = "calculobtn";
             this.calculobtn.Size = new System.Drawing.Size(110, 40);
             this.calculobtn.TabIndex = 35;
             this.calculobtn.Text = "Calcular";
-            this.calculobtn.UseVisualStyleBackColor = true;
+            this.calculobtn.UseVisualStyleBackColor = false;
             this.calculobtn.Click += new System.EventHandler(this.calculobtn_Click);
             // 
             // Viajes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(724, 450);
             this.Controls.Add(this.calculobtn);
             this.Controls.Add(this.dateTimePicker1);

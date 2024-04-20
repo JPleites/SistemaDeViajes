@@ -50,9 +50,10 @@ namespace ProyectoDeTransporte.gtienda
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(312, 353);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(77, 18);
             this.label2.TabIndex = 14;
             this.label2.Text = "Sucursal";
             // 
@@ -66,40 +67,50 @@ namespace ProyectoDeTransporte.gtienda
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 353);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(28, 18);
             this.label1.TabIndex = 12;
             this.label1.Text = "ID";
             // 
             // deletebtn
             // 
+            this.deletebtn.BackColor = System.Drawing.Color.Indigo;
+            this.deletebtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.deletebtn.Location = new System.Drawing.Point(610, 414);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(94, 28);
             this.deletebtn.TabIndex = 11;
             this.deletebtn.Text = "Eliminar";
-            this.deletebtn.UseVisualStyleBackColor = true;
+            this.deletebtn.UseVisualStyleBackColor = false;
             this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // addbtn
             // 
+            this.addbtn.BackColor = System.Drawing.Color.Indigo;
+            this.addbtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.addbtn.Location = new System.Drawing.Point(610, 338);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(94, 28);
             this.addbtn.TabIndex = 10;
             this.addbtn.Text = "Nuevo";
-            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // editbtn
             // 
+            this.editbtn.BackColor = System.Drawing.Color.Indigo;
+            this.editbtn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.editbtn.Location = new System.Drawing.Point(610, 375);
             this.editbtn.Name = "editbtn";
             this.editbtn.Size = new System.Drawing.Size(94, 28);
             this.editbtn.TabIndex = 9;
             this.editbtn.Text = "Editar";
-            this.editbtn.UseVisualStyleBackColor = true;
+            this.editbtn.UseVisualStyleBackColor = false;
             this.editbtn.Click += new System.EventHandler(this.editbtn_Click);
             // 
             // sucdgv
@@ -122,6 +133,7 @@ namespace ProyectoDeTransporte.gtienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(724, 450);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label2);
